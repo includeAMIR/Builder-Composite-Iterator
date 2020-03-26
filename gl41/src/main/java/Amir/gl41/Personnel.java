@@ -11,5 +11,7 @@ public final class Personnel {
 	private DateTimeFormatter germanFormatter;
     LocalDate Date_naissance  = LocalDate.parse("24.12.2014", germanFormatter);
     private List<Integer> numero_tel;
-
+    public static class Builder{
+    	
+    }
 }
