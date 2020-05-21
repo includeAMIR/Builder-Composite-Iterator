@@ -33,12 +33,11 @@ public final class Personnel implements InterfacePersonnel {
 		private final LocalDate date_naissance;
 		private final ArrayList<String>numero_tel = new ArrayList<String>();
 		
-		public Builder(String nom, String prenom, String fonction, LocalDate date_naissance, ArrayList<String> numero_tel){
+		public Builder(String nom, String prenom, String fonction, LocalDate date_naissance){
 			this.nom = nom;
 			this.prenom = prenom;
 			this.fonction = fonction;
 			this.date_naissance = date_naissance;
-			this.numero_tel.addAll(numero_tel);
 		}
 		public Builder Add_num(String nouveau_num) {
 			this.numero_tel.add(nouveau_num);
@@ -56,10 +55,12 @@ public final class Personnel implements InterfacePersonnel {
 		this.numero_tel = build.numero_tel;
 	}
 	public void print() {
+		// TODO Auto-generated method stub
 		System.out.println("	nom: "+ this.nom+"\n	prenom: "+this.prenom+"\n	fonction: "+this.fonction+"\n	date_naissance: "+this.date_naissance);
 		System.out.println("	contact :");
 		for(String num : this.numero_tel) {
 			System.out.println("	"+num);
 		}
+		System.out.println("****************************************************");
 	}
 }
