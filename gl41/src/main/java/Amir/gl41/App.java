@@ -22,6 +22,8 @@ public class App
     	equipe.Add(hoover);
     	equipe.Add(angleton);
     	equipe.print();
-    	equipe.Add(angleton);    	
+    	equipe.Add(angleton);
+    	Affichage a = new Affichage(equipe);
+
     }
 }

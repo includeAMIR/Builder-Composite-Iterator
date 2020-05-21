@@ -9,7 +9,9 @@ public final class Personnel implements InterfacePersonnel {
 	private final String fonction;
 	private final LocalDate date_naissance;
 	private final ArrayList<String>numero_tel;
-	
+	public Personnel getPersonnel() {
+		return this;
+	}
 	public String getNom() {
 		return nom;
 	}
